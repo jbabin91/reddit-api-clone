@@ -14,8 +14,13 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: [8, 'Password must be 5 characters or more.']
+  },
+  somethingNew: {
+    type: String,
+  required: false,
+  minlength: [5, 'Something new']}
   }
-})
+)
 
 // Write some encription for password
 
